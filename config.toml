@@ -1,0 +1,40 @@
+[render]
+template_folder = "templates"
+build_folder = "build"
+static_folder = "static"
+file = "main.html"
+
+[parameter]
+icon = ""
+title = "Link-in-bio"
+avatar = "account.svg"
+name = "Name"
+description = "Description"
+footnote = "Build By <a href=\"https://github.com/ldslds449/LAIO\" target=\"_blank\">LAIO</a>"
+
+google_analytics = ""
+
+[[link]]
+icon = "blog.svg"
+title = "Blog"
+url = ""
+
+[[link]]
+icon = "instagram.svg"
+title = "Instagram"
+url = ""
+
+[[link]]
+icon = "youtube.svg"
+title = "YouTube"
+url = ""
+
+[[link]]
+icon = "twitter.svg"
+title = "Twitter"
+url = ""
+
+[[link]]
+icon = "facebook.svg"
+title = "Facebook"
+url = ""

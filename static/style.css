@@ -1,0 +1,130 @@
+:root {
+  --main-from-bg-color: #97bf5a;
+  --main-end-bg-color: #97bf5a;
+  --avatar-bg-color: #daddd8;
+  --blk-color: #d4ddbb;
+
+  --link-color: #3d890e;
+  --link-visited-color: #3d890e;
+  --link-hover-color: #255c03;
+  --link-active-color: #255c03;
+  --link-text-color: black;
+  
+  --name-font-size: max(1.5em, 1.5em + 3cqi);
+  --description-font-size: max(1em, 1em + 1cqi);
+  --link-font-size: max(1.3em, 0.8em + 3cqi);
+  --link-icon-width: max(1.2em, 1.0em + 1cqi);
+  --footnote-font-size: var(--description-font-size);
+}
+
+@container (min-width: 1000px) {
+  :root {
+    --name-font-size: 3.5em;
+    --description-font-size: 2em;
+    --link-font-size: 3em;
+    --link-icon-width: 1.8em;
+    --footnote-font-size: var(--description-font-size);
+  }
+}
+
+
+body{
+  font-weight: 300;
+  font-family: 'Noto Sans TC', sans-serif;
+  background-image: linear-gradient(to bottom, var(--main-from-bg-color), var(--main-end-bg-color));
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  container-type: inline-size;
+}
+
+.avatar-block {
+  background-color: var(--avatar-bg-color);
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.avatar {
+  width: 40%;
+  border-radius: 50%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.name-block {
+  font-size: var(--name-font-size);
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+}
+
+.description-block {
+  margin-top: 0.5%;
+  margin-bottom: 4%;
+  font-size: var(--description-font-size);
+  width: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.block {
+  width: 75%;
+  margin: 2%;
+  border-radius: 0.5em;
+}
+
+.link {
+  font-size: var(--link-font-size);
+  background-color: var(--blk-color);
+  color: var(--link-text-color);
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.link-icon {
+  width: var(--link-icon-width);
+  margin-left: 5%;
+}
+
+.link-text {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.footnote {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  font-size: var(--footnote-font-size);
+  text-align: center;
+}
+
+a:link {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--link-visited-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  text-decoration: none;
+}
+
+a:active {
+  color: var(--link-active-color);
+  text-decoration: none;
+}
