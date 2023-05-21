@@ -15,11 +15,13 @@ footer = "Build By <a href=\"https://github.com/ldslds449/LAIO\" target=\"_blank
 google_analytics = ""
 
 [[link]]
+open = "self"
 icon = "blog.svg"
 title = "Blog"
 url = ""
 
 [[link]]
+open = "blank"
 icon = "instagram.svg"
 title = "Instagram"
 url = ""

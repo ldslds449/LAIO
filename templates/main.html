@@ -47,7 +47,12 @@
     
     <!-- link -->
     {% for item in links %}
-      <div class="block link" onclick="location.href='{{ item.url }}'">
+      {% if 'open' not in item %}
+        {% set open = 'blank' %}
+      {% else %}
+        {% set open = item.open %}
+      {% endif %}
+      <div class="block link" onclick="window.open('{{ item.url }}', '_{{ open }}').focus()">
         <img src="{{ item.icon }}" alt="Icon" class="link-icon">
         <div class="link-text">
           {{ item.title }}

@@ -33,12 +33,14 @@ LAIO is a link-in-bio generator. With LAIO, we can create a static link-in-bio w
 
     # blog link
     [[link]]
+    open = "self"      # opening link type (self, blank, top, parent)
     icon = "blog.svg"  # icon for the link
     title = "Blog"     # title for the link
     url = ""           # url for the link
 
     # facebook link
     [[link]]
+    open = "blank"
     icon = "facebook.svg"
     title = "Facebook"
     url = ""
