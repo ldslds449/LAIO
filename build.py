@@ -25,6 +25,11 @@ env = Environment(loader=FileSystemLoader(config["render"]["template_folder"]))
 template = env.get_template(config["render"]["file"])
 output_from_parsed_template = template.render(links=config["link"], **config["parameter"])
 
+# clean the build fodler
+for f in glob.glob(os.path.join(config["render"]["build_folder"], "*")):
+  if os.path.isfile(f):
+    os.remove(f)
+
 # save the results
 with open(os.path.join(config["render"]["build_folder"], config["render"]["file"]), "w") as f:
   f.write(output_from_parsed_template)

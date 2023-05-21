@@ -14,7 +14,7 @@
   --description-font-size: max(1em, 1em + 1cqi);
   --link-font-size: max(1.3em, 0.8em + 3cqi);
   --link-icon-width: max(1.2em, 1.0em + 1cqi);
-  --footnote-font-size: var(--description-font-size);
+  --footer-font-size: var(--description-font-size);
 }
 
 @container (min-width: 1000px) {
@@ -23,7 +23,7 @@
     --description-font-size: 2em;
     --link-font-size: 3em;
     --link-icon-width: 1.8em;
-    --footnote-font-size: var(--description-font-size);
+    --footer-font-size: var(--description-font-size);
   }
 }
 
@@ -102,10 +102,10 @@ body{
   text-align: center;
 }
 
-.footnote {
+.footer {
   margin-top: 5%;
   margin-bottom: 3%;
-  font-size: var(--footnote-font-size);
+  font-size: var(--footer-font-size);
   text-align: center;
 }
 

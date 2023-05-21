@@ -7,7 +7,6 @@ import socketserver
 parser = argparse.ArgumentParser()
 parser.add_argument("--config", "-c", type=str, default="config.toml", help="path of configure file")
 parser.add_argument("--port", "-p", type=int, default=8086, help="http server's port")
-parser.add_argument("--directory", "-d", type=str, default="build", help="serve path")
 args = parser.parse_args()
 
 # load config
@@ -17,7 +16,7 @@ except:
   raise Exception("The configure file is not a toml file, or there is a syntax error.")
 
 PORT = args.port
-DIRECTORY = args.directory
+DIRECTORY = config["render"]["build_folder"]
 
 class Handler(http.server.SimpleHTTPRequestHandler):
   def __init__(self, *args, **kwargs):

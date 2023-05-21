@@ -7,10 +7,10 @@ file = "main.html"
 [parameter]
 icon = ""
 title = "Link-in-bio"
-avatar = "account.svg"
+avatar = "avatar.svg"
 name = "Name"
 description = "Description"
-footnote = "Build By <a href=\"https://github.com/ldslds449/LAIO\" target=\"_blank\">LAIO</a>"
+footer = "Build By <a href=\"https://github.com/ldslds449/LAIO\" target=\"_blank\">LAIO</a>"
 
 google_analytics = ""
 
